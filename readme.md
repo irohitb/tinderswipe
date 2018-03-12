@@ -1,5 +1,5 @@
-This is tinder auto swipe script. 
+//To use this plugin 
 
-You can copy this script in your console to Auto Swipe profile right and even left (if you are extra lucky jobless person) 
+//Open chrome -> Click on three dots on right hand upper side -> more tools --> extension --> Enable developers mode --> load unpacked plugin --> locate the parent folder containing all the files. 
 
-Instructions to use the script in comments of the file (Just in case) 
+Happy Swiping 
