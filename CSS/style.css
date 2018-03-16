@@ -1,9 +1,33 @@
-h2 {
-  font-size: 14px;
+.main-heading {
+  font-size: 16px;
   color: black;
+  margin-top: 10px;
+  margin-bottom: 15px;
+
 }
 
 .swipe {
+  height: 30px;
   display: inline-block;
-  width: 150px;
+  width: 170px;
+  font-size: 11px;
+  display:block;
+  margin:auto;
+  margin-top: 7px;
+}
+
+.nswipes {
+    margin-bottom: 20px;
+}
+
+.img-tinder {
+  display:block;
+  margin:auto;
+  margin-bottom: 15px;
+
+}
+
+.insta-checkbox {
+  margin-top: 5px;
+  font-size: 13px;
 }

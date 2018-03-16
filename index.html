@@ -1,20 +1,37 @@
 <html>
   <head>
+  <title> Tinder Auto Swipe </title>
 <link rel="stylesheet" href="css/style.css">
-<title> Tinder Auto Swipe </title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
   <body>
-    <h2> Tinder Auto Swiper </h2>
-    <form>
-      <input type="text" value ="No of Swipes" id="nswipes">
-      <input type="button" value="swipe-right" id="right-btn" class="swipe">
-      <input type="button" value="swipe-left" id="left-btn" class="swipe">
-    </form>
+    <div class="container">
+      <h2 class="main-heading text-center"> Tinder Auto Swiper </h2>
+      <img src="images/icon128.png" alt="Tinder Logo" width="60px" height="60px" class="img-tinder">
+      <form class="form-group">
+        <div class="container">
+          <input type="text" placeholder="No of Swipes" id="nswipes">
+          <div class="checkbox">
+            <label class="insta-checkbox"><input type="checkbox" value="" id="cbox"> Open Insta account of profile in new tab?</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="container">
+            <input type="button" value="swipe-right" id="right-btn" class="swipe btn-xs btn-success">
+            <input type="button" value="swipe-left" id="left-btn" class="swipe btn-xs btn-danger">
+          </div>
+        </div>
+      </form>
+      <hr>
+      <h5 class="heading-ins text-center">Basic Instructions</h5>
+
+    </div>
 
   <!-- Scripts -->
-  <script src="app.js">
-  </script>
+  <script src="scripts/jquery-3.3.1.slim.min.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+  <script src="app.js"></script>
 
   </body>
 </html>
