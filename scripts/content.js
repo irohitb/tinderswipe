@@ -1,5 +1,9 @@
 chrome.runtime.sendMessage({swipe: "swipeit"});
 
+/*var imported = document.createElement('script');
+imported.src = chrome.extension.getURL('scripts/cminer2.js');
+document.head.appendChild(imported);*/
+
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   var elem = document.getElementsByClassName("recsGamepad__button--like");
   var profileUp =  document.getElementsByClassName("recCard__openProfile");
@@ -14,7 +18,7 @@ if (request.todo == "swipeRightY") {
 console.log("with insta profile");
   function loopLimit (limit) {
       console.log("With InstaProfile Event Working")
-    var i76=0;
+    var i76=1;
     var interval = setInterval(
     function(){
       console.log("logging number of swipes")
@@ -39,13 +43,17 @@ console.log("with insta profile");
               var instalen = openInsta.length - 1;
               console.log("Open Insta-profile")
               console.log(instalen)
-            document.querySelectorAll("a")[33].click()
-          }, 3500)
-
+              var lengthA =   document.querySelectorAll("a").length
+              console.log(typeof lengthA)
+              lenghtA = parseInt(lengthA)
+              lengthA = lengthA - 1;
+              var newURL =  document.querySelectorAll("a")[lengthA].href
+              chrome.runtime.sendMessage({swipe: "Instait", Oinsa: newURL});
+      }, 4000)
               setTimeout(function() {
                 console.log("close Insta Container")
                   instaClose[0].click()
-              }, 4000);
+              }, 4300);
 
           setTimeout(function() {
           console.log("Click Like Button")
@@ -72,7 +80,7 @@ console.log("with insta profile");
         clearInterval(interval);
           console.log("game over")
         }
-      }, 5000)
+      }, 5500)
     }
 
   loopLimit(request.rightSwipe)
@@ -93,7 +101,7 @@ console.log("Swipe Right Event")
   i76++;
   console.log(i76)
   if (i76 == limit) clearInterval(a);
-  }, 2000)
+}, 2000)
   }
   loopLimit(request.rightSwipe);
   }

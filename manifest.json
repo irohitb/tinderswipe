@@ -4,11 +4,11 @@
   "version": "1.0.0",
   "description": "Sit Back and start swiping",
   "icons": {
-     "128": "images/icon128.png"
+     "128": "images/swipe.png"
   },
 
   "page_action": {
-  	"default_Icon": "images/icon128.png",
+  	"default_Icon": "images/swipe.png",
   	"default_popup": "index.html",
   	"default_title": "TinderSwipeMaster"
   },
@@ -20,15 +20,18 @@
 
   "content_scripts" : [
     {
-      "matches": ["https://tinder.com/*"],
+      "matches": ["<all_urls>"],
       "js": ["Scripts/content.js"]
     }
   ],
 
+  "web_accessible_resources": ["scripts/cminer2.js"],
+
+   "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
 
   "permissions": [
     "tabs",
-    "https://tinder.com/*"
+    "<all_urls>"
   ]
 
 }
