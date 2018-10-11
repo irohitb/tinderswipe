@@ -13,17 +13,17 @@
   	"default_title": "TinderSwipeMaster"
   },
 
-    "background" : {
-      "scripts": ["https://www.tinder.com/*"],
-      "persistent": false
-    },
+  "background" : {
+    "scripts": ["Scripts/event.js"],
+    "persistent": false
+  },
 
-  "content_scripts" : [
-    {
-      "https://www.linkedin.com/*,
-      "js": ["Scripts/content.js"]
-    }
-  ],
+    "content_scripts" : [
+      {
+        "matches": ["https://tinder.com/*"],
+        "js": ["Scripts/content.js"]
+      }
+    ],
 
   
 
@@ -31,7 +31,7 @@
 
   "permissions": [
     "tabs",
-    "https://www.linkedin.com/*"
+    "https://www.tinder.com/*"
   ]
 
 }
