@@ -5,12 +5,13 @@
 
 ## To Add the extension manually 
 
-
-Open chrome -> Click on three dots on right hand upper side -> more tools --> extension --> Enable developers mode --> load unpacked plugin --> locate the parent folder containing all the files. 
-
-Note: This plugin is also available on chrome store
-
-Download link: https://chrome.google.com/webstore/detail/tinder-auto-swipe/hcphaiocbfimhfddddfnoniooeecomoi
+1. Open chrome
+2. Click on three dots on right hand upper side 
+3. More tools 
+4. Extension
+5. Enable developers mode
+6. load unpacked plugin
+7. locate the parent folder containing all the files. 
 
 
 ## Working GIF 
